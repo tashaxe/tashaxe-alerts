@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*background-image: url(http://tashaxe.com/tashaxe-alerts/bg.png);*/
+}
+
+#container {
+    width: 1920px;
+    height: 1080px;
+}
+
+#container.fadeOut {
+    animation-duration:1s;
+    animation-delay:15s;
+}
+
+#recent-ally {
+    width:182px;
+    height:34px;
+    background-image:url(http://tashaxe.com/tashaxe-alerts/allyrecent.png);
+    position:absolute;
+    top:2px;
+    left:505px;
+}
+
+#recent-ally.flash {
+    animation-duration: 1.5s!important;
+    animation-delay: 0s!important;
+}
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 0;
+  }
+
+  25%, 75% {
+    opacity: 1;
+  }
+}
+
+#alert-container {
+    width:535px;
+    height:153px;
+    background-image:url(http://tashaxe.com/tashaxe-alerts/bgalert.png);
+    position:absolute;
+    top:50px;
+    left:505px;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+#alert-container.fadeOut {
+    animation-duration:1s;
+    animation-delay:5s;
+}
+
+#icon-tip {
+    width:98px;
+    height:96px;
+    background-image:url(http://tashaxe.com/tashaxe-alerts/icontip.png);
+    position:relative;
+    top:40px;
+    left:25px;
+}
+
+#icon-tip.pulse {
+    animation-duration: 2s!important;
+    animation-delay: 0s!important;
+    animation-iteration-count: infinite;
+}
+
+#alert-text {
+    text-align:right;
+    font-family:'Lucida Sans Unicode';
+    color:#fff;
+    position:relative;
+    right:50px;
+    bottom:35px;
+    font-size:18px;
+}
+
+.highlight {
+    color:#f86352;
+}
+
+#op-axe {
+    width:253px;
+    height:32px;
+    background-image: url(opaxe.png);
+    position:absolute;
+    top:15px;
+    left:505px;
+}
+
